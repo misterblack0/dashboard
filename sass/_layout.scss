@@ -1,0 +1,14 @@
+.container {
+  max-width: 160rem;
+  margin: 8rem auto;
+  background-color: var(--color-primary);
+  min-height: 80rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  background-color: var(--color-primary);
+}

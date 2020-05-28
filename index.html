@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar__user-nav">
+          <svg class="sidebar__user-nav--icons">
+            <use xlink:href="img/sprite.svg#icon-power_settings_new"></use>
+          </svg>
+          <svg class="sidebar__user-nav--icons">
+            <use xlink:href="img/sprite.svg#icon-notifications"></use>
+          </svg>
+          <span class="sidebar__user-nav--notification"></span>
+        </div>
+
+        <div class="sidebar__username">
+          <svg class="sidebar__user-nav--icons">
+            <use xlink:href="img/sprite.svg#icon-person"></use>
+          </svg>
+          Andrew Stanton
+          <svg class="sidebar__user-nav--icons">
+            <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+          </svg>
+        </div>
+        <div class="sidebar__navigation">
+          <h1 class="sidebar__navigation--heading">Navigation</h1>
+          <ul class="sidebar__navigation--menu">
+            <li class="sidebar__navigation--menu-item">
+              <a href="#" class="sidebar__navigation--menu-link">
+                <svg class="sidebar__user-nav--icons">
+                  <use xlink:href="img/sprite.svg#icon-person_outline"></use>
+                </svg>
+                <span>My account</span>
+              </a>
+            </li>
+
+            <li class="sidebar__navigation--menu-item">
+              <a href="#" class="sidebar__navigation--menu-link">
+                <svg class="sidebar__user-nav--icons">
+                  <use xlink:href="img/sprite.svg#icon-security"></use>
+                </svg>
+                <span>Security Controls</span>
+              </a>
+            </li>
+
+            <li class="sidebar__navigation--menu-item">
+              <a href="#" class="sidebar__navigation--menu-link">
+                <svg class="sidebar__user-nav--icons">
+                  <use xlink:href="img/sprite.svg#icon-settings"></use>
+                </svg>
+                <span>Account API</span>
+              </a>
+            </li>
+
+            <li class="sidebar__navigation--menu-item">
+              <a href="#" class="sidebar__navigation--menu-link">
+                <svg class="sidebar__user-nav--icons">
+                  <use xlink:href="img/sprite.svg#icon-favorite_outline"></use>
+                </svg>
+                <span>Claim Free Server</span>
+              </a>
+            </li>
+
+            <li class="sidebar__navigation--menu-item">
+              <a href="#" class="sidebar__navigation--menu-link">
+                <svg class="sidebar__user-nav--icons">
+                  <use xlink:href="img/sprite.svg#icon-cloud_queue"></use>
+                </svg>
+                <span>My Servers</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="overview">
+          <div class="overview__heading">
+            <div class="overview__welcome">
+              <h2 class="overview__welcome-message">Welcome</h2>
+              <h1 class="overview__welcome-user">Andrew Stanton</h1>
+            </div>
+            <div class="overview__server-name">
+              <p class="overview__server-heading">Server Name</p>
+              <p class="overview__server-stats">Bastion</p>
+            </div>
+
+            <div class="overview__server-memory">
+              <p class="overview__server-heading">Memory</p>
+              <p class="overview__server-stats">143 / <span>&#8734;</span>MB</p>
+            </div>
+
+            <div class="overview__server-disk">
+              <p class="overview__server-heading">Disk Space</p>
+              <p class="overview__server-stats">64 MB</p>
+            </div>
+
+            <div class="overview__server-cpu">
+              <p class="overview__server-heading">CPU</p>
+              <p class="overview__server-stats">0.046%</p>
+            </div>
+          </div>
+
+          <div class="overview__middle">
+            <div class="overview__middle-list">
+              <h2>Server List</h2>
+              <svg class="down__icon">
+                <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
+              </svg>
+            </div>
+
+            <div class="overview__middle_search-box">
+              <form action="#" class="search">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Filter servers..."
+                />
+                <button class="search__button">
+                  <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="overview__servers">
+            <div class="overview__servers-heading">
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">ID</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">Name</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">Node</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">Connection</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">Memory</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">CPU</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">Relation</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-heading">Status</h1>
+              </div>
+            </div>
+            <div class="overview__servers-list">
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">2bca8f3f</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Server</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Na01</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">142.44.143.175:25572</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- / 3072 MB</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- %</h1>
+              </div>
+              <div class="overview__servers-item">
+                <a href="#" class="server-list-btn">Admin</a>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">online</h1>
+              </div>
+            </div>
+            <div class="overview__servers-list">
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">2bca8f3f</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Server</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Na01</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">142.44.143.175:25572</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- / 3072 MB</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- %</h1>
+              </div>
+              <div class="overview__servers-item">
+                <a href="#" class="server-list-btn">Admin</a>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">online</h1>
+              </div>
+            </div>
+            <div class="overview__servers-list">
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">2bca8f3f</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Server</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Na01</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">142.44.143.175:25572</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- / 3072 MB</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- %</h1>
+              </div>
+              <div class="overview__servers-item">
+                <a href="#" class="server-list-btn">Admin</a>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">online</h1>
+              </div>
+            </div>
+            <div class="overview__servers-list">
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">2bca8f3f</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Server</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">PRM Na01</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">142.44.143.175:25572</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- / 3072 MB</h1>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">-- %</h1>
+              </div>
+              <div class="overview__servers-item">
+                <a href="#" class="server-list-btn">Admin</a>
+              </div>
+              <div class="overview__servers-item">
+                <h1 class="servers-parameters">online</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

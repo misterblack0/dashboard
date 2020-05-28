@@ -1,0 +1,60 @@
+/*
+COLORS
+
+Primary: #222943;
+Primary light: #6D79A6;
+Primary dark: #1A1E32;
+Secondary: #0075FF;
+Pink: #EA2E71;
+
+Grey light 1: #faf9f9
+Grey light 2: #f4f2f2
+Grey light 3: #f0eeee
+Grey light 4: #ccc
+
+Grey dark 1: #333
+Grey dark 2: #777
+Grey dark 3: #999
+
+*/
+:root {
+  --color-primary: #222943;
+  --color-primary-dark: #1a1e32;
+  --color-primary-light: #6d79a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  line-height: 2.6;
+  min-height: 100vh;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
